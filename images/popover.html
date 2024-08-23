@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>popover</title>
+        <style>
+            body {
+                background-color: #ffdb59;
+                font-family: sans-serif;
+            }
+            .pop {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 37vh;
+            }
+            button {
+                width: 120px;
+                height: 35px;
+                border-radius: 10px;
+                border: none;
+                background-color: #29235c;
+                color: #fff;
+                font-size: 18px;
+            }
+            .bt {
+                margin: 0 0 0 8%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="pop">
+            <button popovertarget="my-popover">Open</button>
+        </div>
+        <div id="my-popover" popover>
+            <p><span>Digniin!!</span>waxaa laga yaabaa inwaxan kaa nixiyo<br>
+                Marabtaa wali inaad furto?
+            </p>
+            <button class="bt">Yes</button>
+            <button class="bt">No</button>
+        </div>
+    </body>
+</html>
