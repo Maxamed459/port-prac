@@ -10,13 +10,13 @@
     justify-content: space-between;
     padding: 0 5%;
     margin-top: -1%;
-   
+    
 }
 .nav,ul{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 5% 10px 0 0;
+    margin: 3% 10px 0 0;
 }
 
 li{
@@ -26,7 +26,7 @@ li{
 
 .menu a{
     font-family: 'poppins';
-    font-size: 4vmin;
+    font-size: 20px;
     text-decoration: none;
     text-transform: uppercase;
     color:  #29235c;
@@ -53,25 +53,50 @@ li{
 }
 
 .logo {
-    width: 180px;
-    margin-top: -70px;
+    width: 140px;
+    margin-top: -55px;
 }
 
 /* home section */
 
-#home {
+.hero {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    margin: 0 7%;
-    margin-top: -10%;
-    gap: 20%;
+    height: 100vh;
+    width: 100%;
+    margin: 20px auto;
+    padding: 4%;
+    max-width: 1200px;
+}
+.text {
+    max-width: 600px;
+    margin-bottom: 20%;
+}
+.text h1 {
+    margin-bottom: 20px;
+}
+.img {
+    max-width: 320px;
+    border-radius: 60%;
+    box-shadow: 0 4px 20px rgba(32, 4, 85, .5);
+    margin-bottom: 220px;
+}
+.img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 20px 4px #ffdb59;
 }
 h1 {
-    font-size: 50px;
+    font-size: 48px;
+    color: #29235c;
+}
+h1 span {
+    color: #ffdb59;
 }
 p {
     font-size: 18px;
+    line-height: 1.5;
+    color: #29235c;
 }
 span {
     color: #29235c;
@@ -79,11 +104,90 @@ span {
 .name {
     color: #ffdb59;
 }
+
+.butt {
+    padding: 10px;
+    width: 140px;
+    background-color: #29235c;
+    border: none;
+    color: #fff;
+    color: #efefef;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+.butt:hover {
+    box-shadow: 0 0 5px #29235c;
+    color: #ffdb59;
+}
+
+/* 
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
 .text {
+    max-width: 600px;
 }
-.image{
-    cursor: pointer;
+
+.text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #007BFF; 
 }
-img{
-    width: 90%;
+
+.text h1 span {
+    color: #FF5733;
 }
+
+.text p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.text .name {
+    color: #007BFF; 
+}
+
+.img {
+    max-width: 400px;
+}
+
+/* Responsive Design */
+/*
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text, .img-con {
+        max-width: 100%;
+    }
+
+    .text h1 {
+        font-size: 36px;
+    }
+
+    .text p {
+        font-size: 18px;
+    }
+} 
+*/
